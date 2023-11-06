@@ -1,0 +1,100 @@
+Crie sua própria loja! Ela deve vender um tipo de produto como roupas, bicicletas ou qualquer coisa que seja de seu interesse. Você deve ter uma tabela para todos os itens na sua loja e pelo menos 5 colunas para o tipo de dado que você considera armazenar. Você deve vender pelo menos 15 itens e usar as instruções select para ordenar seus itens por preço e mostrar pelo menos uma estatística sobre os itens. 
+
+CREATE TABLE loja_beauty (id INTEGER PRIMARY KEY,
+preco REAL,
+quantidade INTEGER,
+marca TEXT,
+tipo TEXT);
+
+INSERT INTO loja_beauty VALUES (
+1,
+150,
+2,
+"PARIS",
+"corporal");
+INSERT INTO loja_beauty VALUES (
+2,
+75,
+6,
+"day",
+"facial");
+INSERT INTO loja_beauty VALUES (
+3,
+98,
+15,
+"Prime",
+"corporal");
+INSERT INTO loja_beauty VALUES (
+4,
+55,
+17,
+"Please",
+"facial");
+INSERT INTO loja_beauty VALUES (
+5,
+34,
+20,
+"Plus",
+"corporal");
+INSERT INTO loja_beauty VALUES (
+6,
+137,
+23,
+"Truss",
+"facial");
+INSERT INTO loja_beauty VALUES (
+7,
+160,
+5,
+"Cloe",
+"facial");
+INSERT INTO loja_beauty VALUES (
+8,
+250,
+4,
+"Drama",
+"corporal");
+INSERT INTO loja_beauty VALUES (
+9,
+150,
+12,
+"Nuts",
+"facial");
+INSERT INTO loja_beauty VALUES (
+10,
+59,
+8,
+"Pincare",
+"corporal");
+INSERT INTO loja_beauty VALUES (
+11,
+41,
+3,
+"Vazz",
+"facial");
+INSERT INTO loja_beauty VALUES (
+12,
+28,
+10,
+"Cute",
+"corporal");
+INSERT INTO loja_beauty VALUES (
+13,
+190,
+42,
+"Talk",
+"facial");
+INSERT INTO loja_beauty VALUES (
+14,
+36,
+14,
+"Come",
+"corporal");
+INSERT INTO loja_beauty VALUES (
+15,
+154,
+13,
+"Juice",
+"facial");
+SELECT * FROM loja_beauty ORDER BY preco;
+SELECT * FROM loja_beauty WHERE preco > 100;
